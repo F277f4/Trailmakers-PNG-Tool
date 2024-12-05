@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TMPNGJS</title>
+		<link rel="stylesheet" href="../../second.css">
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+	<div id="pseudopage"><a href="../../index.html" style="margin: 0;"><img src="../../svgs/elements/websitetitle.svg" id="title"></a></div>
+	<div id="page">
+		<div class="item flex">
+		<div class="half background">
+		<h3>Data</h3><br>
+		<input type="file" accept=".png" id="dataFile"><br>
+		<h3>Image</h3><br>
+		<input type="file" accept=".png" id="imageFile"><br>
+		<h3 class="advanced" style="display: none;">Byte stream</h3><br>
+		<input type="file" accept=".tmsf" id="byteStream" class="advanced" style="display: none;"><br>
+		<h3 class="advanced" style="display: none;">Json file</h3><br>
+		<input type="file" accept=".json" id="jsonFile" class="advanced" style="display: none;">
+		</div>
+		<div class="half background">
+		<h3>Parameters</h3><br>
+		<input type="checkbox" id="description"><p>Description image</p><br>
+		<input type="checkbox" id="lowerBit"><p>4-bit</p><br>
+		<input type="checkbox" id="solid"><p>Opaque?</p><br>
+		<input type="number" value="100" id="imageSize" class="eigth"><p>relative image size</p><br>
+		<input type="number" value="100" id="imageSquish" class="eigth"><p>relative image squish</p><br>
+		<input type="number" value="100" id="imageGirth" class="eigth"><p>pixel thickness factor</p><br>
+		<input type="checkbox" id="advancedCheck"><p>Advanced</p><br class="advanced" style="display: none;">
+		<input type="checkbox" id="exportByteArrayCheck" class="advanced" style="display: none;"><p class="advanced" style="display: none;">Export byte array</p><br>
+		<input type="checkbox" id="exportJsonCheck" class="advanced" style="display: none;"><p class="advanced" style="display: none;">Export "json" file</p><br>
+		</div>
+		</div>
+		<div class="item background">
+		<h3>Output</h3><br>
+		<a id="imageOutput">Image output</a><br>
+		<a id="textOutput">Image text output</a><br class="advanced" style="display: none;">
+		<a id="binaryOutput" class="advanced" style="display: none;">tmsf output</a><br class="advanced" style="display: none;">
+		<a id="jsonOutput" class="advanced" style="display: none;">JSON output</a>
+		</div>
+	</div>
+	<script src="./bundle.js"></script>
+	</body>
+</html>

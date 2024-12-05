@@ -1,0 +1,27 @@
+
+body {
+	background-image: url("../../svgs/backgrounds/nondistract.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: left;
+	
+	margin: 0;
+	overflow: hidden;
+}
+a:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+.half {
+	width: 50%;
+	display: block;
+	box-sizing: border-box;
+}
+input {
+	border-style: none;
+	background-color: #40110e;
+}
+.eigth {
+	width: 12.5%;
+}
